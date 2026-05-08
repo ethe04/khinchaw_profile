@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Khin Chaw Shwe Yee</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo"><img src="img/profile.jpg" onclick="showSection('home')"></div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <ul id="menu">
+            <li onclick="showSection('home')">Home</li>
+            <li onclick="showSection('about')">About</li>
+            <li onclick="showSection('projects')">Projects</li>
+        </ul>
+
+        <button class="theme-btn" onclick="toggleTheme()"><i class="fa-regular fa-sun"></i></button>
+    </nav>
+
+    <!-- HOME -->
+    <div id="home" class="section active">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>Hey there, I am <br>Khin Chaw Shwe Yee</h1>
+                <h2>Junior Developer</h2>
+                <p>Junior Developer with experience in full-stack web development, databases, and DevOps basics.
+                    Passionate about building scalable applications and continuously improving problem-solving skills.
+                </p>
+            </div>
+            <div class="home-image">
+                <img src="img/profile.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>I am a passionate developer learning modern web development.</p>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Description here.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Description here.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Khin Chaw Shwe Yee. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/khin-chaw-shwe-yee" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ethe04" target="_blank">GitHub</a>
+                <a href="mailto:khinchawshweyee4@gmail.com">Email Me</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    </script>
+
+</html>
