@@ -27,9 +27,9 @@ function toggleTheme() {
     const themeButton = document.querySelector("nav button");
 
     if (document.body.classList.contains("dark")) {
-        themeButton.innerHTML = "<i class=\"fa-regular fa-sun\"></i>";
-    } else {
         themeButton.innerHTML = "<i class=\"fa-regular fa-moon\"></i>";
+    } else {
+        themeButton.innerHTML = "<i class=\"fa-regular fa-sun\"></i>";
     }
 }
 

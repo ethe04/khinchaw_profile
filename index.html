@@ -5,17 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Khin Chaw Shwe Yee</title>
 </head>
 
-<body>
-    <!-- NAVBAR -->
+<body class="dark">
     <nav>
-        <div class="logo"><img src="img/profile.jpg" onclick="showSection('home')"></div>
-
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
         <ul id="menu">
@@ -24,7 +21,8 @@
             <li onclick="showSection('projects')">Projects</li>
         </ul>
 
-        <button class="theme-btn" onclick="toggleTheme()"><i class="fa-regular fa-sun"></i></button>
+        <div class="theme-toggle"> <button class="theme-btn" onclick="toggleTheme()"><i
+                    class="fa-regular fa-sun"></i></button></div>
     </nav>
 
     <!-- HOME -->
@@ -33,9 +31,14 @@
             <div class="home-text">
                 <h1>Hey there, I am <br>Khin Chaw Shwe Yee</h1>
                 <h2>Junior Developer</h2>
-                <p>Junior Developer with experience in full-stack web development, databases, and DevOps basics.
-                    Passionate about building scalable applications and continuously improving problem-solving skills.
+                <p>Motivated junior developer with hands-on experience in web development, databases, and DevOps
+                    projects. Passionate about building responsive applications, solving complex problems, and
+                    continuously learning new technologies.
+                    Currently growing toward AI Engineering and Data Science while developing strong foundations in
+                    software development and system design.
                 </p>
+                <button class="home-btns" onclick="showSection('projects')">View Projects</button>
+                <button class="home-btns">Contact Me</button>
             </div>
             <div class="home-image">
                 <img src="img/profile.jpg" alt="Profile Picture">
@@ -45,25 +48,233 @@
 
     <!-- ABOUT -->
     <div id="about" class="section">
-        <h2>About Me</h2>
-        <div class="card">
-            <p>I am a passionate developer learning modern web development.</p>
+        <div class="about-editorial">
+            <!-- HEADER SECTION -->
+            <div class="editorial-header">
+                <h1 class="big-title">Biography</h1>
+            </div>
+
+            <div class="editorial-grid">
+                <!-- LEFT COLUMN: SIDEBAR INFO -->
+                <aside class="editorial-sidebar">
+                    <div class="info-block">
+                        <span class="label">✎ Personal Info</span>
+                        <p><strong>Name:</strong> Khin Chaw Shwe Yee</p>
+                        <p><strong>Role:</strong> Junior Developer</p>
+                        <p><strong>Location:</strong> SanChaung, Yangon</p>
+                        <p><strong>Email:</strong> khinchaw...yee4@gmail.com</p>
+                        <p><strong>Phone:</strong> 09893208566</p>
+                    </div>
+
+                    <div class="info-block">
+                        <span class="label">★ Education</span>
+                        <p><strong>Edinburgh Napier University</strong></p>
+                        <p class="small-text">BSc (Computing)</p>
+                    </div>
+
+                    <div class="info-block">
+                        <span class="label">★ Main Skills</span>
+                        <div class="editorial-skills">
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span class="percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PHP</span>
+                                    <span class="percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span class="percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span class="percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MySQL</span>
+                                    <span class="percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="fill" style="width: 88%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git</span>
+                                    <span class="percent">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- RIGHT COLUMN: BIO & IMAGES -->
+                <main class="editorial-main">
+                    <div class="bio-text">
+                        <p><strong>Hello!</strong> I'm Khin Chaw Shwe Yee, a Junior Developer dedicated to building
+                            functional and responsive web applications. I have a strong foundation in Object-Oriented
+                            Programming and Web Technologies, with a passion for continuous learning in the
+                            ever-evolving tech landscape.</p>
+                    </div>
+
+                    <!-- THE DOUBLE IMAGE SHOWCASE -->
+                    <div class="image-showcase">
+                        <div class="img-wrapper rounded-corner">
+                            <img src="your-photo-1.jpg" alt="Professional Portrait">
+                        </div>
+                        <div class="img-wrapper standard">
+                            <img src="your-photo-2.jpg" alt="Workspace or Action Shot">
+                        </div>
+                    </div>
+
+                    <!-- BOTTOM ROW OF DATA (Concepts & Interests) -->
+                    <!-- BOTTOM SECTION: SKILLS, INTERESTS & LANGUAGES -->
+                    <div class="editorial-footer-grid">
+
+                        <!-- Soft Skills Card -->
+                        <div class="info-block">
+                            <span class="label">✦ Soft Skills</span>
+                            <div class="tag-cloud">
+                                <span class="tag-item">Problem Solving</span>
+                                <span class="tag-item">Debugging</span>
+                                <span class="tag-item">Team Collaboration</span>
+                                <span class="tag-item">Communication</span>
+                                <span class="tag-item">Time Management</span>
+                                <span class="tag-item">Adaptability</span>
+                            </div>
+                        </div>
+
+                        <!-- Languages Card -->
+                        <div class="info-block">
+                            <span class="label">🌐 Languages</span>
+                            <div class="language-bar">
+                                <div class="lang-unit">
+                                    <span class="lang-name">English</span>
+                                    <div class="skill-dots"><span class="dot filled"></span><span
+                                            class="dot filled"></span><span class="dot filled"></span><span
+                                            class="dot"></span></div>
+                                </div>
+                                <div class="lang-unit">
+                                    <span class="lang-name">Burmese</span>
+                                    <div class="skill-dots"><span class="dot filled"></span><span
+                                            class="dot filled"></span><span class="dot filled"></span><span
+                                            class="dot filled"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Career Interests Card (Spans full width) -->
+                        <div class="info-block full-width">
+                            <span class="label">🚀 Career Interests</span>
+                            <p class="interest-text">
+                                Full Stack Development • Mobile Application Development • AI Engineering • Data Science
+                            </p>
+                        </div>
+                    </div>
+
+
+                </main>
+            </div>
         </div>
     </div>
 
     <!-- PROJECTS -->
     <div id="projects" class="section">
-        <h2>Projects</h2>
 
-        <div class="card">
-            <h3>Project 1</h3>
-            <p>Description here.</p>
+        <div class="project-card">
+            <div class="project-grid">
+                <div class="project-info">
+                    <div class="project-tag">Web Application</div>
+                    <h3>E-commerce Reading Room</h3>
+                    <p>A full-stack solution for book lovers featuring a seamless shopping experience.</p>
+                    <ul class="project-list">
+                        <li>Dynamic cart with session handling</li>
+                        <li>Advanced multi-criteria filtering</li>
+                        <li>Full Admin Dashboard & Order Tracking</li>
+                    </ul>
+
+                    <div class="tech-stack">
+                        <div class="lang-tags">
+                            <span class="lang-tag java"><i class="dot"></i>HTML</span>
+                            <span class="lang-tag sql"><i class="dot"></i> CSS</span>
+                            <span class="lang-tag docker"><i class="dot"></i> PHP</span>
+                            <span class="lang-tag spring"><i class="dot"></i> MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="image-gallery">
+                        <img src="img/demo1.png" alt="Hero" class="gallery-img main">
+                        <img src="img/demo5.png" alt="Admin" class="gallery-img sub-1">
+                        <img src="img/demo7.png" alt="List" class="gallery-img sub-2">
+                        <img src="img/demo8.png" alt="Profile" class="gallery-img sub-3">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <h3>Project 2</h3>
-            <p>Description here.</p>
+        <div class="project-card">
+            <div class="project-grid reverse">
+                <div class="project-info">
+                    <div class="project-tag">Game Development</div>
+                    <h3>Fruit Riddles - Match 3 Game</h3>
+                    <p>A vibrant, logic-based puzzle game built with high-performance match detection.</p>
+                    <ul class="project-list">
+                        <li>Responsive cross-platform UI</li>
+                        <li>Game Progress Persistance</li>
+                        <li>Complex grid logic & scoring</li>
+                    </ul>
+
+                    <div class="tech-stack">
+                        <div class="lang-tags">
+                            <span class="lang-tag java"><i class="dot"></i>HTML</span>
+                            <span class="lang-tag sql"><i class="dot"></i> CSS</span>
+                            <span class="lang-tag docker"><i class="dot"></i>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="image-gallery">
+                        <img src="img/demo9.png" alt="Hero" class="gallery-img main">
+                        <img src="img/demo10.png" alt="Admin" class="gallery-img sub-1">
+                        <img src="img/demo7.png" alt="List" class="gallery-img sub-2">
+                        <img src="img/demo8.png" alt="Profile" class="gallery-img sub-3">
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <footer>
