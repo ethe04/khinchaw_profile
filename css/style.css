@@ -680,6 +680,7 @@ body.dark .lang-tag {
     height: 350px;
     overflow: hidden;
     background: var(--card);
+     border: 8px solid rgba(37, 99, 235, 0.05);
 }
 
 .img-wrapper img {
@@ -698,7 +699,6 @@ body.dark .lang-tag {
 /* The specific curved corner from your image */
 .rounded-corner {
     border-top-left-radius: 120px;
-    border: 8px solid rgba(37, 99, 235, 0.05);
 }
 
 /* Footer grid for skills/tags */
